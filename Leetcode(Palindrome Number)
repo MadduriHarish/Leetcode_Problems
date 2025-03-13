@@ -1,0 +1,12 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        b=0
+        temp=x
+        while(temp>0):
+            rem=temp%10
+            b=(b*10)+rem
+            temp=temp//10
+        if (x==b):
+            return True
+        else:
+            return False
